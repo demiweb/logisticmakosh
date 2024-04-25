@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body class="home">
+//= details/header.html
+
+<main>
+    <section class="inside">
+        <div class="inside-wrap">
+
+            <div class="inside-left">
+                <div class="logo-mak">
+                    <a href="">
+                        <img src="./img/logo-mak.svg" alt="">
+                    </a>
+                </div>
+                <div class="logic-menu">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul>
+                        <li><a href="" class="active">Головна</a></li>
+                        <li><a href="">Актуальні заявки</a></li>
+                        <li><a href="">На доопрацюванні</a></li>
+                        <li><a href="">Завершені</a></li>
+                    </ul>
+
+                    <a href="" class="btn btn--orange">
+                        Вийти
+                        <div class="ic">
+                            <img src="./img/out-ic.svg" alt="">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="inside-right">
+                <div class="inside-top">
+                    <div class="inside-top__left">
+                    <span class="title">
+                        <strong>Вітаємо, Валентино!</strong>
+                    </span>
+
+                    </div>
+                    <div class="inside-top__right">
+                        <div class="inside-search">
+                            <form action="">
+                                <input type="search" placeholder="Пошук по: Номер CRM, 1C, Менеджер, ЄДРПОУ">
+                                <button class="btn-search">
+                                    <img src="./img/search-ic.svg" alt="">
+                                </button>
+                                <div class="clear-src">
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <script>
+                            let clearSrc = document.querySelector('.clear-src');
+
+                            function clearInput() {
+                                clearSrc.addEventListener('click', () => {
+                                    document.querySelector('.inside-search').classList.remove('show');
+                                    document.querySelector('.inside-search input').value = '';
+                                    document.querySelector('.inside-table').classList.remove('show');
+                                })
+                            }
+
+                            clearInput();
+
+                            function textLength(value) {
+                                var maxLength = 3;
+                                if (value.length >= maxLength) {
+                                    document.querySelector('.inside-table').classList.add('show');
+                                    document.querySelector('.inside-search').classList.add('show');
+                                } else {
+                                    document.querySelector('.inside-table').classList.remove('show');
+                                    document.querySelector('.inside-search').classList.remove('show');
+                                }
+                            }
+
+                            document.querySelector('.inside-search input').onkeyup = function () {
+                                textLength(this.value);
+                            }
+                        </script>
+
+                    </div>
+
+                </div>
+
+                <div class="inside-center">
+                    <div class="inside-stat">
+                        <div class="single-stat">
+                            <span>Активних заявок</span>
+
+                            <div class="stat-bot">
+                                <p>2</p>
+                            </div>
+
+                        </div>
+                        <div class="single-stat">
+                            <span>Оброблено за місяць</span>
+
+                            <div class="stat-bot">
+                                <p>56</p>
+                                <div class="worked good">
+                                    +20%
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="single-stat">
+                        <span>Відправлено на
+доопрацювання</span>
+
+                            <div class="stat-bot">
+                                <p>15</p>
+                                <div class="worked bad">
+                                    -7%
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="inside-table">
+                        <div class="inside-table__wrap">
+                            <div class="inside-table__head">
+                                <div class="table-item">
+                                    #
+                                </div>
+                                <div class="table-item">
+                                    Статус
+                                </div>
+                                <div class="table-item">
+                                    Номер рахунку в 1С
+                                </div>
+                                <div class="table-item">
+                                    Дата створення
+                                </div>
+                                <div class="table-item">
+                                    Дата редагування
+                                </div>
+                                <div class="table-item">
+                                    Назва господарства, код ЄДРПОУ
+                                </div>
+                                <div class="table-item">
+                                    Менеджер CRM
+                                </div>
+
+                            </div>
+                            <div class="inside-table__cont">
+                                <a href="" class="inside-table__line">
+                                    <div class="table-item">
+                                        <small>#</small>
+                                        <span>74B-k4L</span>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Статус</small>
+                                        <div class="tag done">Новий</div>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Номер рахунку в 1С</small>
+                                        <p>74B-k4L</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата створення</small>
+                                        <p>20.04.2024 14:52</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата редагування</small>
+                                        <p>
+                                            <strong>21.04.2024 10:18</strong>
+                                            <small>Зміна в CRM</small>
+                                        </p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Назва господарства, код ЄДРПОУ</small>
+                                        <p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ГОСПОДАРСТВО ДРЗ, 44086286</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Менеджер CRM</small>
+                                        <p>Тарас Тарасович Тарасюк</p>
+                                    </div>
+                                </a>
+                                <a href="" class="inside-table__line">
+                                    <div class="table-item">
+                                        <small>#</small>
+                                        <span>74B-k4L</span>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Статус</small>
+                                        <div class="tag">Завершено</div>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Номер рахунку в 1С</small>
+                                        <p>74B-k4L</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата створення</small>
+                                        <p>20.04.2024 14:52</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата редагування</small>
+                                        <p>
+                                            <strong>21.04.2024 10:18</strong>
+                                            <small>Зміна в CRM</small>
+                                        </p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Назва господарства, код ЄДРПОУ</small>
+                                        <p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ГОСПОДАРСТВО ДРЗ, 44086286</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Менеджер CRM</small>
+                                        <p>Тарас Тарасович Тарасюк</p>
+                                    </div>
+                                </a>
+                                <a href="" class="inside-table__line">
+                                    <div class="table-item">
+                                        <small>#</small>
+                                        <span>74B-k4L</span>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Статус</small>
+                                        <div class="tag work">Доопрацювання</div>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Номер рахунку в 1С</small>
+                                        <p>74B-k4L</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата створення</small>
+                                        <p>20.04.2024 14:52</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата редагування</small>
+                                        <p>
+                                            <strong>21.04.2024 10:18</strong>
+                                            <small>Зміна в CRM</small>
+                                        </p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Назва господарства, код ЄДРПОУ</small>
+                                        <p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ГОСПОДАРСТВО ДРЗ, 44086286</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Менеджер CRM</small>
+                                        <p>Тарас Тарасович Тарасюк</p>
+                                    </div>
+                                </a>
+                                <a href="" class="inside-table__line">
+                                    <div class="table-item">
+                                        <small>#</small>
+                                        <span>74B-k4L</span>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Статус</small>
+                                        <div class="tag done">Новий</div>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Номер рахунку в 1С</small>
+                                        <p>74B-k4L</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата створення</small>
+                                        <p>20.04.2024 14:52</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Дата редагування</small>
+                                        <p>
+                                            <strong>21.04.2024 10:18</strong>
+                                            <small>Зміна в CRM</small>
+                                        </p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Назва господарства, код ЄДРПОУ</small>
+                                        <p>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ ГОСПОДАРСТВО ДРЗ, 44086286</p>
+                                    </div>
+                                    <div class="table-item">
+                                        <small>Менеджер CRM</small>
+                                        <p>Тарас Тарасович Тарасюк</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="" class="prev"></a></li>
+                                <li><span class="current">1</span></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="" class="next"></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="backdrop-menu">
+
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+//= details/footer.html
+//= details/scripts.html
+</body>
+</html>
