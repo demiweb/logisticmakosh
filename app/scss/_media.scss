@@ -450,6 +450,10 @@
   .task-line > span {
     font-size: 14px;
   }
+  .task-line > strong {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
   .task-text > p {
     font-size: 14px;
   }
@@ -747,6 +751,11 @@
 }
 
 @media print {
+  .task-line {
+    > strong {
+      margin-bottom: 10px;
+    }
+  }
   .about-task__right, .task-global .btns, .inside-top__right, .inside-left, .inside-top__left .btn {
     display: none !important;
   }
@@ -767,6 +776,9 @@
   }
   .task-line>span {
     font-size: 14px;
+  }
+  .task-line>strong {
+    font-size: 15px;
   }
   .task-comment textarea {
     font-size: 14px;

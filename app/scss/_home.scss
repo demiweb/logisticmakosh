@@ -973,6 +973,16 @@ body {
     padding-right: 10px;
 
   }
+  > strong {
+    display: inline-block;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #1637ab;
+    margin-bottom: 22px;
+  }
 }
 
 .task-comment {
