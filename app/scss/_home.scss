@@ -407,11 +407,13 @@ body {
 
     &:not(:placeholder-shown) {
       border-color: $main-color;
+
     }
 
 
     &::placeholder {
       color: #555555;
+      font-weight: 400;
     }
 
 
@@ -833,10 +835,11 @@ body {
   }
 
   &:hover {
-    background: #ECEFF6;
+    background: #fff;
+    border-color: $main-color;
 
     &:nth-child(even) {
-      background: rgba(255, 255, 255, 0);
+      background: rgba(255, 255, 255, 1);
     }
   }
 }

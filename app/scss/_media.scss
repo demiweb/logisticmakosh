@@ -501,7 +501,7 @@
       align-items: center;
       justify-content: flex-start;
       transform: translate(0, -200%);
-      transition: all 0.3s ease-out;
+      //transition: all 0.3s ease-out;
 
       li {
         width: 100%;
@@ -533,7 +533,7 @@
     opacity: 0.4;
     pointer-events: auto;
     transform: translate(-100%, 0);
-    transition: all 0.3s ease-out;
+    //transition: all 0.3s ease-out;
   }
   .inside-wrap {
     position: relative;
@@ -714,7 +714,16 @@
     flex-wrap: wrap;
 
     .btn {
-      width: 100%;
+      //width: 100%;
+      font-size: 14px;
+      padding: 5px;
+      gap: 6px;
+    }
+  }
+  .task-global .btns {
+    .btn {
+      font-size: 13px;
+      gap: 6px;
     }
   }
   .inside-top__right {
@@ -749,5 +758,34 @@
   }
   body {
     background: rgba(255, 255, 255, 0);
+  }
+  body {
+    width: 1400px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .task-line>span {
+    font-size: 14px;
+  }
+  .task-comment textarea {
+    font-size: 14px;
+    padding: 15px 10px;
+    min-height: 140px;
+  }
+  .select-status .nice-select {
+    height: 36px;
+    > span {
+      font-size: 14px;
+    }
+  }
+  .task-line {
+    padding: 8px 0;
+  }
+  .task-text>p {
+    font-size: 14px;
+  }
+  .inside-top {
+    margin-bottom: 25px;
   }
 }
